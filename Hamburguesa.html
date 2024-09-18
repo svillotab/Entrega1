@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Hamburguesa.css">
+</head>
+<body>
+    <div class="men">
+        <div class="menu">
+            <img src="Fotos/logo.png" alt="">
+            <a href="inicio.html">Inicio</a>
+            <a class="actual" href="Todo.html">Menú</a>
+            <a href="promociones.html">Promociones</a>
+            <a href="cuenta.html">Cuenta</a>
+            <form action="Login.html" method="get">
+            <button class="custom-button" type="submit">Iniciar sesión</button>  
+            </form> 
+        </div>
+    </div>
+
+    <div class="cuerpo">
+        <div class="columna1">
+        <div class="filtros">
+            <input type="text" placeholder="Buscar" class="buscar">
+            <button class="filtros-botton"><img class="filter" src="Imagenes/filter.png" alt="filtros"></button>
+        </div>
+        
+        <div class="cate">
+        <form action="Vegetariano.html" method="get">
+        <button class="filtro1" type="submit"><img class="categoria" src="Imagenes/vege.png" alt="veg">Vegetariano</button>
+        </form>
+
+        <form action="Hamburguesa.html" method="get">
+        <button class="filtro1"><img class="categoria1" src="Imagenes/Hamburguesa.png" alt="veg">Hamburguesa</button>
+        </form>
+
+        <form action="Dulces.html" method="get">
+        <button class="filtro1"><img class="categoria2" src="Imagenes/Dulce.png" alt="veg">Dulces</button>
+        </form>
+
+        <form action="Mecato.html" method="get">
+        <button class="filtro1"><img class="categoria3" src="Imagenes/Mecato.png" alt="veg">Mecato</button>
+        </form>
+
+        <form action="Bebidas.html" method="get">
+        <button class="filtro1"><img class="categoria4" src="Imagenes/Bebidas.png" alt="veg">Bebidas</button>
+        </form>
+
+        <form action="Productos.html" method="get">
+        <button class="filtro1" type="submit"><img class="categoria5" src="Imagenes/Bowls.png" alt="veg">Bowls</button>
+        </form>
+        </div>
+
+        <div class="almuerzo">
+        <p class="almuerzo1">Hamburguesas</p>
+        <p class="almuerzo2">Pollo y Carne</p>
+        </div>
+
+        <div class="cate">
+
+            <div class="comid">
+                <img class="foto-comida1" src="Imagenes/Pollo.jpg.avif" alt="pollo">
+                <p class="nombre">Pollo Apanado</p>
+                <div class="producto-precio">
+                    <p class="precio">$ 15.700</p>
+                    <a href="#detalle-coso" class="detalle-producto">+</a>
+                </div>
+            </div>
+
+            <div class="detalle-coso" id="detalle-coso">
+                <div class="modal-content">
+                    <a href="#" class="close">&times;</a>
+                    <img class="detalle-img" src="https://sabrosano.com/wp-content/uploads/2020/05/Hamburguesa_Pollo_Frito_5.jpg" alt="Pollo">
+                    <p class="nombre-d">Hamburguesa de pollo apanado</p>
+                    <p class="precio-d">Hamburguesa de dos pechugas de pollo apanadas, con tomate, lechuga y cebolla, acompañado con papas.</p>
+                    <div>
+                    <button class="carrito5">Agregar a lista</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="comid">
+                <img class="foto-comida2" src="Imagenes/Crane.png" alt="pollo">
+                <p class="nombre">Carne Asada</p>
+                <div class="producto-precio">
+                    <p class="precio">$ 12.890</p>
+                    <a href="#detalle-coso1" class="detalle-producto">+</a>
+                </div>
+            </div>
+
+            <div class="detalle-coso" id="detalle-coso1">
+                <div class="modal-content">
+                    <a href="#" class="close">&times;</a>
+                    <img class="detalle-img" src="data:image/jpeg;base64,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" alt="Pollo">
+                    <p class="nombre-d">Hamburguesa de carne asada</p>
+                    <p class="precio-d">Hamburguesa de una carne con tocino y queso americano, verduras opcionales y papas.</p>
+                    <div>
+                    <button class="carrito5">Agregar a lista</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="comid">
+                <img class="foto-comida3" src="Imagenes/Bacon.jpg.avif" alt="pollo">
+                <p class="nombre">Carne y Tocineta</p>
+                <div class="producto-precio">
+                    <p class="precio">$ 16.700</p>
+                    <a href="#detalle-coso2" class="detalle-producto">+</a>
+                </div>
+            </div>
+
+            <div class="detalle-coso" id="detalle-coso2">
+                <div class="modal-content">
+                    <a href="#" class="close">&times;</a>
+                    <img class="detalle-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-zbbkiiD9iHpmGpWnhe09jVPp1p6A35NX4w&s" alt="Pollo">
+                    <p class="nombre-d">Hamburguesa de tocineta y carne</p>
+                    <p class="precio-d">Hamburguesa de carne y tocineta, con queso americano, papas a la francesa y pepinillos.</p>
+                    <div>
+                    <button class="carrito5">Agregar a lista</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="comid">
+                <img class="foto-comida" src="Imagenes/Polloplancha.png" alt="pollo">
+                <p class="nombre">Pollo Asado</p>
+                <div class="producto-precio">
+                    <p class="precio">$ 13.400</p>
+                    <a href="#detalle-coso3" class="detalle-producto">+</a>
+                </div>
+            </div>
+
+            <div class="detalle-coso" id="detalle-coso3">
+                <div class="modal-content">
+                    <a href="#" class="close">&times;</a>
+                    <img class="detalle-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReKGRDQAVhmW4enmyTkW1M-mffuudJf7Kwow&s" alt="Pollo">
+                    <p class="nombre-d">Hamburguesa de pollo asado</p>
+                    <p class="precio-d">Hamburguesa de pechuga de pollo acompañado con lechuga y salsa de la casa, adicionalmente lleva papas.</p>
+                    <div>
+                    <button class="carrito5">Agregar a lista</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="comid">
+                <img class="foto-comida" src="Imagenes/3carnes.jpeg" alt="pollo">
+                <p class="nombre">3 Carnes</p>
+                <div class="producto-precio">
+                    <p class="precio">$ 23.000</p>
+                    <a href="#detalle-coso4" class="detalle-producto">+</a>
+                </div>
+            </div>
+
+            <div class="detalle-coso" id="detalle-coso4">
+                <div class="modal-content">
+                    <a href="#" class="close">&times;</a>
+                    <img class="detalle-img" src="data:image/jpeg;base64,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" alt="Pollo">
+                    <p class="nombre-d">Hamburguesa de 3 carnes</p>
+                    <p class="precio-d">Tiene 3 carnes acompañado con 3 quesos americanos y tocineta, pepinillo y lechuga adicionales. Trae papas.</p>
+                    <div>
+                    <button class="carrito5">Agregar a lista</button>
+                </div>
+                </div>
+            </div>
+           
+
+        </div>
+    </div>
+
+    <div>
+        <div class="columna2">
+            <div class="producto">
+                <img class="comida1"  src="Imagenes/Pollo.png" alt="">
+                <p class="comida5">Bowl de Pollo</p>
+                <p class="precio5">$ 14.600</p>
+            </div>
+            <div class="producto">
+                <img class="comida2"  src="Imagenes/Bebidas.png" alt="">
+                <p class="comida5">Coca-cola</p>
+                <p class="precio5">$ 3.200</p>
+            </div>
+            <div class="producto">
+                <img class="comida" src="Imagenes/Mecato.png" alt="">
+                <p class="comida5">Papas de limon</p>
+                <p class="precio5">$ 2.500</p>
+            </div>
+            <form action="carrito.html" method="get">
+                <button class="carrito" type="submit">Ir al carrito</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
